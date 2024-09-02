@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정규분포 곡선 그리기</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Chart.js 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- SheetJS (xlsx) 라이브러리 -->
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>정규분포 곡선 그리기</h1>
+        <input type="file" id="fileInput" accept=".xlsx, .xls">
+        <textarea id="clipboardInput" placeholder="클립보드에서 복사한 데이터를 여기에 붙여넣으세요."></textarea>
+        <button id="processClipboard">데이터 처리</button>
+
+        <div id="stats"></div>
+
+        <canvas id="chart"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
